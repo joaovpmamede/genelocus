@@ -18,8 +18,9 @@
       <a href="#" class="site__logo">Gene Locus</a>
       <nav class="site-nav">
         <ul class="site-nav__list cf">
-          <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__link--current">Início</a></li>
-          <li class="site-nav__item"><a href="#" class="site-nav__link">Contactos</a></li>
+          <li class="site-nav__item"><a href="#quem-somos" class="site-nav__link">Quem somos</a></li>
+          <li class="site-nav__item"><a href="#o-que-fazemos" class="site-nav__link">O que fazemos</a></li>
+          <li class="site-nav__item"><a href="#contact" class="site-nav__link">Contactos</a></li>
         </ul>
       </nav>
     </div>
@@ -38,7 +39,7 @@
     </div>
   </div><!-- /masthead -->
 
-  <section class="site-section">
+  <section class="site-section" id="quem-somos">
     <div class="wrapper">
       <h3>Quem Somos</h3>
       <img class="site-section__img" src="images/graph.png" alt="">
@@ -52,7 +53,7 @@
     </div>
   </section>
 
-  <section class="site-section">
+  <section class="site-section" id="o-que-fazemos">
     <div class="wrapper">
       <h3>O que fazemos</h3>
       <div class="grid">
@@ -90,8 +91,23 @@
     </div>
   </section>
 
-  <section class="site-section">
-    <a href="/contacto" class="btn">Contacto</a>
+  <section class="site-section" id="contactos">
+    <div class="wrapper">
+      <h3>Contactos</h3>
+
+      <form action="" method="post">
+        <fieldset>
+          <legend>SE QUER FAZER A SUA ÁRVORE GENEALÓGICA <br>OU SE TEM QUESTÕES CONTACTE A GENELOCUS <br>PARA O INFORMARMOS SOBRE AS NOSSAS OFERTAS.</legend>
+          <input type="hidden" name="redirect_to" value="http://www.gene-locus-com/#contact">
+
+          <input type="text" name="name" placeholder="Nome" required="">
+          <input type="email" name="email" placeholder="E-mail" autocomplete="off" required="">
+          <textarea rows="9" name="message" placeholder="Mensagem" required=""></textarea>
+        </fieldset>
+        <button type="submit" class="btn btn--send">Enviar</button>
+        <!-- <input type='submit' value='Test form' /> -->
+      </form>
+    </div>
   </section>
 
   <footer class="main-footer">

@@ -46,9 +46,54 @@ p {
   color: #474242;
   font-size: 13px;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  color: #474242;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+input, textarea {
+  border: 1px solid #C3C3C3;
+  border-radius: 4px;
+  color: #474242;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 16px;
+  width: 100%;
+  transition: all .3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #0082f3;
+}
+
+button {
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+   color: #C3C3C3;
+}
 
 /**
  * Clearfix
@@ -145,7 +190,7 @@ p {
   letter-spacing: 2px;
   text-align: center;
   text-transform: uppercase;
-  padding: 10px 14px;
+  padding: 10px;
   transition: all .3s;
 }
 
@@ -153,6 +198,17 @@ p {
   background-color: #707082;
   border-color: #707082;
   color: #fff;
+}
+
+.btn--send {
+  background-color: #0082f3;
+  border-color: #0082f3;
+  color: #fff;
+}
+
+.btn--send:hover {
+  background-color: #0170D0;
+  border-color: #0170D0;
 }
 
 .main-header {
@@ -248,8 +304,12 @@ p {
 }
 
 .site-section {
-  margin: 90px 0;
+  margin: 70px 0;
   text-align: center;
+}
+
+.site-section .wrapper {
+  padding-top: 20px;
 }
 
 .site-section h3,
