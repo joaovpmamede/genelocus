@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Gene locus</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: { families: ["Open Sans:300,400,700"] }
+    });
+  </script>
+</head>
+<body>
+
+  <header class="main-header cf">
+    <div class="wrapper">
+      <a href="#" class="site__logo">Gene Locus</a>
+      <nav class="site-nav">
+        <ul class="site-nav__list cf">
+          <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__link--current">Início</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link">Contactos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="masthead">
+      <div class="masthead__container">
+        <div>
+          <div class="masthead__title js-masthead">
+            <div class="wrapper">
+              <h1>Gene Locus</h1>
+              <h2>História da Família</h2>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /masthead -->
+
+  <section class="site-section">
+    <div class="wrapper">
+      <h3>Quem Somos</h3>
+      <img class="site-section__img" src="images/graph.png" alt="">
+      <p>A Gene Locus quer tornar acessível o conhecimento da história da família a todos.<br>
+      Encontrar as suas linhagens depende de uma extensa pesquisa em variados registos e arquivos,
+      em todo o país, que nos oferecem informações chave para a descoberta de histórias de vida que
+      estariam para sempre escondidas. Poderá conhecer os locais de origem da família, a origem do seu
+      sobrenome, ou mesmo as profissões dos seus antecessores. Dar resposta a perguntas que todos nós
+      colocamos – “De onde vem a teimosia do meu pai?”, “Porque tenho olhos azuis?” – poderá ser mais
+      fácil através do conhecimento de traços genéticos, sociais ou geográficos dos nossos antepassados.</p>
+    </div>
+  </section>
+
+  <section class="site-section">
+    <div class="wrapper">
+      <h3>O que fazemos</h3>
+      <div class="grid">
+
+        <div class="col-1-3">
+          <div class="site-section__wrapper">
+            <img class="site-section__img site-section__img--small" src="images/gene.png" alt="Pesquisa Genealógica">
+            <h4>Pesquisa Genealógica</h4>
+            <p>Realizamos pesquisas genealógicas a partir de informações iniciais recolhidas em entrevista.
+            A partir desta recolha inicia-se o processo de pesquisa em arquivos e fontes documentais.
+            Como resultado final irá obter uma árvore genealógica, e um relatório, com a transcrição dos documentos
+            por nós encontrados.</p>
+          </div>
+        </div>
+
+        <div class="col-1-3">
+          <div class="site-section__wrapper">
+            <img class="site-section__img site-section__img--small" src="images/inter.png" alt="Pesquisa internacional">
+            <h4>Pesquisa internacional</h4>
+            <p>Quer encontrar o rasto da sua família portuguesa?<br>
+            A GeneLocus irá através da informação fornecida procurar os registos e realizar a genealogia da sua família, em Portugal.</p>
+          </div>
+        </div>
+
+        <div class="col-1-3">
+          <div class="site-section__wrapper">
+            <img class="site-section__img site-section__img--small" src="images/doc.png" alt="Pesquisa de documentos">
+            <h4>Pesquisa de documentos</h4>
+            <p>Procura uma informação ou documento específico? A GeneLocus faz a pesquisa por si em diversos arquivos portugueses.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="site-section">
+    <a href="/contacto" class="btn">Contacto</a>
+  </section>
+
+  <footer class="main-footer">
+    <div class="wrapper wrapper--sm">
+      <div class="grid">
+
+        <div class="col-1-3">
+          <h3>About Gene Locus</h3>
+          <p>GeneLocus – Serviços de genealogia portuguesa e pesquisa em arquivos.</p>
+          <p>Email:</p>
+          <p>Telefone:</p>
+        </div>
+
+        <div class="col-1-3"><br></div>
+
+        <div class="col-1-3">
+          <h3>Social</h3>
+          <ul>
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">Google+</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    <p>Copyright 2015 Gene Locus</p>
+  </div>
+
+  <script type="text/javascript">
+    function ready(fn) {
+      if (document.readyState != 'loading'){
+        fn();
+      } else {
+        document.addEventListener('DOMContentLoaded', fn);
+      }
+    }
+
+    function addClass(el, className) {
+      if (el.classList) {
+        el.classList.add(className);
+      } else {
+        el.className += ' ' + className;
+      }
+    }
+
+    ready(function() {
+      var masthead = document.querySelector('.js-masthead');
+
+      addClass(masthead, 'animate');
+    });
+  </script>
+
+</body>
+</html>
